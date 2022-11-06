@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans',sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8e9dd;
+  gap: 20px;
+}
+
+.container .header {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 20px;
+  width: 90%;
+  background-color: #ec775f;
+}
+
+.container .header .logo {
+  width: 50px;
+  height: 50px;
+  background-color: #382314;
+  border-radius: 50%;
+  position: relative;
+}
+
+.container .header .logo::after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: -60%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.container .card {
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container .card .card-header {
+  color: #382314;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.container .card .week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 300px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .card .week .day {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .week .day:nth-child(3) .chart {
+  background-color: #76b5bc;
+}
+
+.container .card .week .day .chart {
+  border-radius: 3px;
+  height: 270px;
+  width: 80%;
+  background-color: #ec775f;
+}
+
+.container .card .line {
+  margin-top: 30px;
+}
+
+.container .card .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .footer .total p {
+  font-size: 16px;
+  color: #93867b;
+}
+
+.container .card .footer .total h1 {
+  font-size: 40px;
+  color: #382314;
+}
+
+.container .card .footer .total-precent {
+  text-align: end;
+  margin-top: 50px;
+}
+
+.container .card .footer .total-precent p {
+  color: #382314;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container .card .footer .total-precent span {
+  color: #93867b;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .container .header {
+    width: 370px;
+  }
+  .container .card {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
